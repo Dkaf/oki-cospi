@@ -2,16 +2,32 @@
   height: 90vh;
   background: linear-gradient(rgb(0, 0, 0, .45), rgb(0, 0, 0, .45)), url('./img/boat.jpg') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   margin-bottom: 10vh;
 }
 
-.header-text{
+.logo {
   position: absolute;
+  top: 5%;
+  left: 2%;
+  height: auto;
+  width: 200px;
+}
+
+.text-container {
+  /* position: absolute;
   top: 25%;
-  left: 20%;
-  color: rgb(255, 255, 255, .9);
-  font-size: 7em;
-  font-family: 'Josefin Slab', serif;
+  left: 20%; */
+}
+
+.header-text {
+  color: rgb(255, 255, 255, .8);
+  font-size: 95px;
+  font-family: 'chunkfiveroman', serif;
   text-transform: uppercase;
   font-weight: normal;
+}
+
+.sub-header {
+  font-size: 64px;
 }
