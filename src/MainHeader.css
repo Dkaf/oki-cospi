@@ -7,9 +7,11 @@
 
 .header-text{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  top: 25%;
+  left: 20%;
+  color: rgb(255, 255, 255, .9);
   font-size: 7em;
+  font-family: 'Josefin Slab', serif;
+  text-transform: uppercase;
+  font-weight: normal;
 }
