@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import MainHeader from './MainHeader';
-import NavBar from './NavBar';
 import Gallery from './Gallery';
 import TextArticle from './TextArticle';
 
