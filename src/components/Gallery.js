@@ -1,6 +1,7 @@
 import React from 'react';
-import { Grid, Header } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 import GalleryImg from './GalleryImg';
+import './../Gallery.css';
 
 import cindy1 from './../img/cindy-1.jpg';
 import cindy2 from './../img/cindy-2.jpg';
@@ -22,7 +23,6 @@ const galleryItems = galleryImages.map(img => {
 
 const Gallery = () => (
   <Grid container columns="3">
-    <Header size="huge" content="Gallery" />
     {galleryItems}
   </Grid>
 );
