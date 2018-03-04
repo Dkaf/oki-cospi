@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Transition, GridColumn, Sticky } from 'semantic-ui-react';
+import { Transition, Grid, Sticky, Image } from 'semantic-ui-react';
 import sticker from './../img/Sticker.png';
+import Gallery from './Gallery';
 import './../MainHeader.css';
 
 const descriptions = [
@@ -12,14 +13,18 @@ const descriptions = [
 class MainHeader extends Component {
   state = { logoVisible: true, logoAnimation: 'jiggle', descriptionVisible: true, description: 0 }
 
+  handleContextRef = contextRef => this.setState({ contextRef });
+
   toggleLogo = () => this.setState({ logoVisible: !this.state.logoVisible} ); 
 
   toggleDescription = () => this.setState({ descriptionVisible: !this.state.descriptionVisible })
 
   changeDescription = () => {
-    this.setState({
-      description: (this.state.description < descriptions.length) ? this.state.description++ : 0
-    });
+    if (this.state.description < descriptions.length) {
+      this.setState({ description: this.state.description + 1 })
+    } else {
+      this.setState({ description: 0 })
+    }
   }
 
   animateLogo = () => {
@@ -39,18 +44,17 @@ class MainHeader extends Component {
     this.animateLogo();
   }
   render() {
+    const { contextRef } = this.state;
+
     return (
-      <GridColumn className="header-container" width="16">
-        <Transition onComplete={this.animateLogo} visible={this.state.logoVisible} animation={this.state.logoAnimation} duration={1000}>
-          <img src={sticker} className="logo"/>
-        </Transition>
-        <div className="text-container">
-          <h1 className="header-text">Oki Cospi</h1>
-          <Transition onComplete={this.animateDescription} visible={this.state.descriptionVisible} animation="browse" duration={500}>
-            <h2 className="header-text sub-header">{descriptions[this.state.description]}</h2>
-          </Transition>
-        </div>
-      </GridColumn>
+      <Grid.Column className="header-container" width="16">
+          <Sticky offset={20}>
+            <Transition onComplete={this.animateLogo} visible={this.state.logoVisible} animation={this.state.logoAnimation} duration={1000}>
+              <Image src={sticker} size="small" id="logo" alt="Oki Cospi logo" />
+            </Transition>
+          </Sticky>
+            <h1 className="header-text">Oki Cospi</h1>
+      </Grid.Column>
     )
   };
 };
