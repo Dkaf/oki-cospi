@@ -1,7 +1,34 @@
 @font-face {
-  font-family: 'chunkfiveroman';
-  src: url('./fonts/chunkfive-webfont.woff2') format('woff2'),
-       url('./fonts/chunkfive-webfont.woff') format('woff');
+  font-family: 'Coves Light';
+  src: url('./fonts/coves_light-webfont.woff2') format('woff2'),
+       url('./fonts/coves_light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Coves Bold';
+  src: url('./fonts/coves_bold-webfont.woff2') format('woff2'),
+       url('./fonts/coves_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Moon Regular';
+  src: url('./fonts/moon2.0-regular-webfont.woff2') format('woff2'),
+       url('./fonts/moon2.0-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Moon Bold';
+  src: url('./fonts/moon2.0-bold-webfont.woff2') format('woff2'),
+       url('./fonts/moon2.0-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
