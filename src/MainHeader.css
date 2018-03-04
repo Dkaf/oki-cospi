@@ -6,26 +6,26 @@
   margin-bottom: 10vh;
 }
 
-.logo {
+#logo {
   position: absolute;
   top: 5%;
-  left: 2%;
-  height: auto;
-  width: 200px;
 }
 
 .text-container {
   /* position: absolute;
-  top: 25%;
-  left: 20%; */
+  top: 50%;
+  left: 50%;
+  transform: translate(50%,50%); */
 }
 
 .header-text {
-  color: rgb(255, 255, 255, .8);
-  font-size: 95px;
-  font-family: 'chunkfiveroman', serif;
-  text-transform: uppercase;
-  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  color: rgb(255,255,255);
+  font-size: 12em;
+  font-family: 'Coves Bold', serif;
+  text-transform:lowercase;
 }
 
 .sub-header {
