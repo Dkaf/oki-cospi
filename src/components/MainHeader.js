@@ -53,7 +53,9 @@ class MainHeader extends Component {
               <Image src={sticker} size="small" id="logo" alt="Oki Cospi logo" />
             </Transition>
           </Sticky>
-            <h1 className="header-text">Oki Cospi</h1>
+          <h1 className="header-text">
+            Oki Cospi Creates Quality Cosplay
+          </h1>
       </Grid.Column>
     )
   };
